@@ -24,7 +24,7 @@ function Food({name,picture,rating}){  // =function Food(props.fav){}
   </div>
 }
 
-Food.propTypes={
+Food.propTypes={ //propTypes로 체크할 수 있음
   name : PropTypes.string.isRequired,
   picture : PropTypes.string.isRequired,
   rating : PropTypes.number.isRequired
