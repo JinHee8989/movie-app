@@ -7,9 +7,11 @@ class App extends React.Component {
   };
   add = () => {
     console.log("add");
+    this.setState(current => ({count : current.count + 1})); //setState를 할때마다 react는 render를 호출한다.
   };
   minus = () => { 
     console.log("minus"); 
+    this.setState(current => ({count : current.count - 1}));
   };
   render() {
     return <div><h1>The number is {this.state.count}.</h1>
